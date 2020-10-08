@@ -8,8 +8,8 @@ public class Circle{
 
     System.out.print("Enter a radius: ");
     int r = input.nextInt();
-    double c = 2*r*3.14;
-    double a = 2*r*r*3.14;
+    double c = 2*r*Math.PI;
+    double a = 2*r*r*Math.PI;
     System.out.println("Circumference: "+c);
     System.out.println("Area: "+a);
   }
