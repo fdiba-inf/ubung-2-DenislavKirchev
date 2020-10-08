@@ -14,7 +14,7 @@ public class SumOfDigits{
     number = number/10;
     int thirdDigit = number%10;
     int sum=firstDigit+secondDigit+thirdDigit;
-    System.out.println("Sum of digit: "+sum);
+    System.out.println("Sum of digits: "+sum);
 
   
   }
