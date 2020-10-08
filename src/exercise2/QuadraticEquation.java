@@ -8,18 +8,18 @@ public class QuadraticEquation{
     Scanner input = new Scanner(System.in);
 
     System.out.print("Enter a: ");
-    int a = input.nextInt();
+    double a = input.nextDouble();
     System.out.print("Enter b: ");
-    int b = input.nextInt();
+    double b = input.nextDouble();
     System.out.print("Enter c: ");
-    int c = input.nextInt();
+    double c = input.nextDouble();
 
     if(a!=0){
-      double d = b*b-4*a*c;
+      double d = b*b-4.0*a*c;
       if(d>=0){
-        double x1= (-b+Math.sqrt(d))/2*a;
-        double x2= (-b+Math.sqrt(d))/2*a;
-        System.out.print("X1= "+x1+"X2= "+x2);
+        double x1= (-b+Math.sqrt(d))/(2.0*a);
+        double x2= (-b+Math.sqrt(d))/(2.0*a);
+        System.out.print(x1 + ", " + x2);
       }
       else{
         System.out.print("Imaginary values");
@@ -27,13 +27,13 @@ public class QuadraticEquation{
     }
     else if(b!=0){
       double x = -c/a;
-      System.out.print("X=+/-"+x);
+      System.out.println(x);
     }
     else if(c!=0){
-      System.out.print("No values");
+      System.out.println("No values");
     }
     else{
-      System.out.print("Many values");
+      System.out.println("Many values");
     }
     
   }
